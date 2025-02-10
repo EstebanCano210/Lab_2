@@ -1,0 +1,67 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "pets",
+    "collectionId": "031d2c64-a7af-438c-bb1e-ddbb63e3ee7f",
+    "dateExported": "2025-02-10T16:35:53.353Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2bed8f38-6794-487e-931b-32c573e1754b",
+            "colId": "031d2c64-a7af-438c-bb1e-ddbb63e3ee7f",
+            "containerId": "",
+            "name": "https://www.thunderclient.com/welcome",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/67aa0a6ce24f1cfc02ed4ff1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-10T16:31:38.659Z",
+            "modified": "2025-02-10T16:31:38.659Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMDgyNzkzMTk0OThlMzc0N2IwODAiLCJpYXQiOjE3MzkyMDQ2MzgsImV4cCI6MTczOTIwODIzOH0.RlZiCbve4nJEfAhtrzzD8PPWGINVzULRcZ0MKGc24NQ"
+                }
+            ]
+        },
+        {
+            "_id": "f706ac87-4b42-4836-a5cb-4e96736bcb3a",
+            "colId": "031d2c64-a7af-438c-bb1e-ddbb63e3ee7f",
+            "containerId": "",
+            "name": "https://www.thunderclient.com/welcome",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-10T16:31:45.610Z",
+            "modified": "2025-02-10T16:31:45.610Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMDgwZTkzMTk0OThlMzc0N2IwN2MiLCJpYXQiOjE3MzkxOTY1NzQsImV4cCI6MTczOTIwMDE3NH0.-eCNOjKKMovDL1V3czJ9DJznfd_s3-3QfcvSQ9smXes"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"max2lavenganza\",\n  \"descripcion\": \"mongo\",\n  \"age\": \"3\",\n  \"type\": \"perro\",\n  \"email\": \"llpp@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f9c30dc0-6acc-4867-948f-64dffb883893",
+            "colId": "031d2c64-a7af-438c-bb1e-ddbb63e3ee7f",
+            "containerId": "",
+            "name": "http://localhost:3000/adoptionSystem/v1/pets/67aa0a47e24f1cfc02ed4fed",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/67aa0a47e24f1cfc02ed4fed",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-02-10T16:32:44.130Z",
+            "modified": "2025-02-10T16:32:44.130Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMDgwZTkzMTk0OThlMzc0N2IwN2MiLCJpYXQiOjE3MzkxOTk4NTcsImV4cCI6MTczOTIwMzQ1N30.5iMHelhRMKMdagxC914cP7lZbXRqI5mVmcQ_U7FM6nQ"
+                }
+            ]
+        }
+    ],
+    "ref": "MgtyyBm1A011-f6OGJ4TCjL94vTBZJ28AqW6pEPbZyPSnbCQBBzSkjhjgr3c_99nN2NAoYu3Iv1clp8QLGuNQw"
+}

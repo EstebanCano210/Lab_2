@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "67aa0a47e24f1cfc02ed4fed"
+  },
+  "name": "max",
+  "descripcion": "perro salchica",
+  "age": 3,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67aa080e9319498e3747b07c"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-02-10T14:16:39.700Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-10T15:10:49.360Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67aa0a6ce24f1cfc02ed4ff1"
+  },
+  "name": "max2lavenganza",
+  "descripcion": "mongo",
+  "age": 3,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67aa080e9319498e3747b07c"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-10T14:17:16.096Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-10T14:17:16.096Z"
+  }
+}]

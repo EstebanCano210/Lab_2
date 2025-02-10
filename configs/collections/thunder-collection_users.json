@@ -1,0 +1,57 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "users",
+    "collectionId": "98fb1d0d-f67b-474d-a58f-c43de771c8a3",
+    "dateExported": "2025-02-10T16:38:00.861Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fd470425-c97d-42ab-adfb-b149849e0447",
+            "colId": "98fb1d0d-f67b-474d-a58f-c43de771c8a3",
+            "containerId": "",
+            "name": "http://localhost:3000/adoptionSystem/v1/auth/register",
+            "url": "http://localhost:3000/adoptionSystem/v1/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-10T16:32:08.170Z",
+            "modified": "2025-02-10T16:32:08.170Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"juan\",\n  \"surname\": \"jn\",\n  \"username\": \"jwule\",\n  \"email\": \"wulen@gmail.com\",\n  \"password\": \"123456789\",\n  \"profilePicture\": \"\",\n  \"phone\": \"12345674\",\n  \"role\": \"ADMIN_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "17554897-8a0d-454e-be98-f13426c80567",
+            "colId": "98fb1d0d-f67b-474d-a58f-c43de771c8a3",
+            "containerId": "",
+            "name": "http://localhost:3000/adoptionSystem/v1/users/findUser/67a1009aa0daa331ae300f9d",
+            "url": "http://localhost:3000/adoptionSystem/v1/users/findUser/67aa19e51c87946c9f43d634",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-10T16:32:27.930Z",
+            "modified": "2025-02-10T16:32:27.930Z",
+            "headers": []
+        },
+        {
+            "_id": "eefdf4ce-18a7-4642-8e92-2a97c8891c59",
+            "colId": "98fb1d0d-f67b-474d-a58f-c43de771c8a3",
+            "containerId": "",
+            "name": "http://localhost:3000/adoptionSystem/v1/users/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMTllNTFjODc5NDZjOWY0M2Q2MzQiLCJpYXQiOjE3MzkyMDEwNjYsImV4cCI6MTczOTIwNDY2Nn0.YDChg1fVJ2aq7Q3kRaucwo_NfqED5AO2iviFl10kLXw",
+            "url": "http://localhost:3000/adoptionSystem/v1/users/67aa080e9319498e3747b07c",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-02-10T16:32:34.866Z",
+            "modified": "2025-02-10T16:32:34.866Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMDgyNzkzMTk0OThlMzc0N2IwODAiLCJpYXQiOjE3MzkyMDEyMDksImV4cCI6MTczOTIwNDgwOX0.Exwq3uKqdmbYSYv7YW0Qj3Vj7NMgN9sq3_kMQCo8G78"
+                }
+            ]
+        }
+    ],
+    "ref": "MCdX2PP4aP_uwO2bkbF4JuRtYGJ6PaptzuczLYdMeXMOPLGgdFx_KqSWXDt3x4gfiOI1oAdJerW1fcG0guqd3w"
+}

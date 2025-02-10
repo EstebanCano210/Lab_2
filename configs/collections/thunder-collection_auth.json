@@ -1,0 +1,45 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "auth",
+    "collectionId": "d68fac01-72c7-49fa-86f1-c00fb0c1e7ae",
+    "dateExported": "2025-02-10T16:38:11.613Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d1298e96-f2f9-4deb-a779-0bea81ef174d",
+            "colId": "d68fac01-72c7-49fa-86f1-c00fb0c1e7ae",
+            "containerId": "",
+            "name": "http://localhost:3000/adoptionSystem/v1/auth/login",
+            "url": "http://localhost:3000/adoptionSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-10T16:31:51.914Z",
+            "modified": "2025-02-10T16:31:51.914Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"falonso\",\n  \"password\": \"123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0256a58c-71c5-462b-bca3-f21b1c475288",
+            "colId": "d68fac01-72c7-49fa-86f1-c00fb0c1e7ae",
+            "containerId": "",
+            "name": "http://localhost:3000/adoptionSystem/v1/auth/register",
+            "url": "http://localhost:3000/adoptionSystem/v1/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-10T16:31:58.907Z",
+            "modified": "2025-02-10T16:31:58.907Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"juan\",\n  \"surname\": \"jn\",\n  \"username\": \"more\",\n  \"email\": \"more@gmail.com\",\n  \"password\": \"123456789\",\n  \"profilePicture\": \"\",\n  \"phone\": \"12345674\",\n  \"role\": \"USER_ROLE\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "G4oPdzFAGQbXF9T2rajW9HGcX77RZrxK6Z3jo4lWpgqsj62gpRuTNLXo5LVZGtVlgZ_48JPlUChhJFInU8EQdA"
+}
