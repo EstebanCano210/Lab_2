@@ -1,3 +1,4 @@
+import Pet from '../pet/pet.model.js';
 import Role from '../role/role.model.js';
 import User from '../users/user.model.js';
 
@@ -23,5 +24,13 @@ export const existeUsuarioById = async(id = '') => {
 
     if (!existeUsuario) {
         throw new Error(`El ID ${id} no existe`);
+    }
+}
+
+export const existeMascotaById = async(id= '') => {
+    const existeMascota = await Pet.findById(id);
+
+    if (!existeMascota) {
+        throw new Error(`El Id ${id} no existe`);
     }
 }
