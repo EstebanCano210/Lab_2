@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "b28349f0-1e47-4b3a-acb7-f52cfe5a2acb",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42121262"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNjUzNmY1NTE5YTE2ODkwMmE2Y2QiLCJpYXQiOjE3MzkyODc2OTksImV4cCI6MTczOTI5MTI5OX0.iisjH7o8ZyoGk-EgUSjlLaLjL-xugN0AymTpPj9nZec",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/findUser/67a2294e5f7d4090be8185e1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						"findUser",
+						"67a2294e5f7d4090be8185e1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNjUzNmY1NTE5YTE2ODkwMmE2Y2QiLCJpYXQiOjE3MzkyODYwNTgsImV4cCI6MTczOTI4OTY1OH0.jx-3Rzruy-UZ1bseleLJPRozYJiYbfKQeQSHifVTYYY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar con contraseña",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNjUzNmY1NTE5YTE2ODkwMmE2Y2QiLCJpYXQiOjE3MzkyOTEyOTEsImV4cCI6MTczOTI5NDg5MX0.fx-Muzkdg_r0Eqa51VF8INH_2Y5NwJ-gWlmtYz3Fyqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"miguel2\",\r\n    \"surname\": \"el migue\",\r\n    \"username\": \"migulillo\",\r\n    \"email\": \"m23@example.com\",\r\n    \"phone\": \"74859632\",\r\n    \"role\": \"ADMIN_ROLE\",\r\n    \"oldPassword\": \"123456789\",\r\n    \"password\": \"987654321\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/67ab6a73ca9a107774a9f59f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						"67ab6a73ca9a107774a9f59f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar sin contraseña",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNjUzNmY1NTE5YTE2ODkwMmE2Y2QiLCJpYXQiOjE3MzkyOTEyOTEsImV4cCI6MTczOTI5NDg5MX0.fx-Muzkdg_r0Eqa51VF8INH_2Y5NwJ-gWlmtYz3Fyqo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/67ab6a73ca9a107774a9f59f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						"67ab6a73ca9a107774a9f59f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

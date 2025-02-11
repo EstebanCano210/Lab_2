@@ -9,7 +9,10 @@ import { tieneRole } from "../middlewares/validar-roles.js";
 
 const router = Router();
  
-router.get("/", getUsers);
+router.get(
+    "/",
+    getUsers
+);
  
 router.get(
     "/findUser/:id",
@@ -25,12 +28,16 @@ router.put(
     "/:id",
     uploadProfilePicture.single("profilePicture"),
     [
-        check("id", "No es un ID valido").isMongoId(),
+        validarJWT,
+        tieneRole("ADMIN_ROLE"),
+        check("id", "No es un ID válido").isMongoId(),
         check("id").custom(existeUsuarioById),
+        check("password","La nueva contraseña debe tener al menos 8 caracteres").optional().isLength({ min: 8 }),
+        check("oldPassword","Debes ingresar la contraseña anterior para cambiar la contraseña").if(check("password").exists()).notEmpty(),
         validarCampos
     ],
     updateUser
-)
+);
 
 router.delete(
     "/:id",

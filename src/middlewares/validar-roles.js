@@ -5,7 +5,7 @@ export const tieneRole = (...roles) => {
         if (!req.usuario) {
             return res.status(500).json({
                 success: false,
-                msg: "Se quiere verificar un rolo sin validar el token primero"
+                msg: "Se quiere verificar un rol, validar el token primero"
             })
         }
 

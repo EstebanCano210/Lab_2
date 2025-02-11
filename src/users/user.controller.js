@@ -1,5 +1,6 @@
 import { response, request } from "express";
-import { hash, verify } from "argon2";
+import { hash, verify} from "argon2";
+import argon2 from "argon2";
 import User from './user.model.js';
  
 export const getUsers = async (req = request, res = response) => {
@@ -54,31 +55,57 @@ export const getUsersById = async (req, res) => {
     }
 }
 
-export const updateUser = async(req, res = response) => {
+export const updateUser = async (req, res) => {
     try {
-        const {id} = req.params;
-        const {_id, password, email, ...data} = req.body;
+        const { id } = req.params;
+        const { _id, email, password, oldPassword, ...data } = req.body;
 
-        if (password) {
-            data.password = await hash(password)
+        const user = await User.findById(id);
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                msg: "Usuario no encontrado"
+            });
         }
 
-        const user = await User.findByIdAndUpdate(id, data, {new: true});
+        if (password) {
+            if (!oldPassword) {
+                return res.status(400).json({
+                    success: false,
+                    msg: "Debes ingresar la contraseña anterior"
+                });
+            }
+
+            const validPassword = await argon2.verify(user.password, oldPassword);
+            if (!validPassword) {
+                return res.status(400).json({
+                    success: false,
+                    msg: "La contraseña anterior es incorrecta"
+                });
+            }
+
+            data.password = await argon2.hash(password);
+        }
+
+        const updatedUser = await User.findByIdAndUpdate(id, data, { new: true });
 
         res.status(200).json({
-            succes: true,
-            msg: "Usuario Actualizado",
-            user
-        })
-    
+            success: true,
+            msg: "Usuario actualizado",
+            user: updatedUser
+        });
+
     } catch (error) {
+        console.error("Error al actualizar usuario:", error);
+
         res.status(500).json({
-            succes: false,
+            success: false,
             msg: "Error al actualizar usuario",
-            error
-        })
+            error: error.message || error 
+        });
     }
-}
+};
+
 
 export const deleteUser = async (req, res) => {
     try {
